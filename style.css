@@ -13,7 +13,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     background-color: #c6a790;
-    max-height: 200px;
+    max-height: 100px;
 }
 header img{
     width: 150px;
@@ -53,6 +53,7 @@ nav a:hover{
     text-transform: uppercase;
     color: #1a2235;
     font-size: 35px;
+    line-height: 2em;
 }
  #show .color{
     color: #d66b64;
@@ -280,7 +281,7 @@ footer .part1 img{
 }
 @media (max-width: 350px){
     header{
-        height: auto;
+        max-height: 200px;
     }
    nav{
        flex-direction: column;
