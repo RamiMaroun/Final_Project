@@ -1,0 +1,337 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 2em;
+}
+a{
+    text-decoration-line: none;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0 0.5);
+    background-color:white;
+    color: white;
+}
+header .part1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #c6a790;
+    position: fixed;
+    width: 100%;
+}
+header .part1 img{
+    width: 150px;
+}
+ nav{
+    display: flex;
+    flex-direction: row;
+}
+ nav a{
+    padding:20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #1a2235;
+    font-size: 20px;
+}
+nav a:hover{
+    background-color: #d66b64;
+}
+ header .part2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ header .part2 img{
+     width: 100%;
+     height: auto;
+     padding-top: 100px;
+}
+ header .part2 .pic{
+     width: 60%;
+     margin-top: 100px;
+ }
+ header .part2 h1{
+     text-align: center;
+    width: 40%;
+    margin-top: 300px;
+    text-transform: uppercase;
+    color: #1a2235;
+    font-size: 35px;
+    line-height: 2em;
+}
+ header .part2 .color{
+    color: #d66b64;
+}
+ main{
+     padding: 0;
+     margin: 0;
+     width: 100%;
+ }
+ .btn {
+    text-align: center;
+ }
+#part1{
+    background-color:#ddc8ac;
+    padding-bottom: 50px;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.txt{
+    width: 70%;
+}
+#part1 .pic{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#part1 img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding-top: 100px;
+}
+button{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: auto;
+}
+#part1 button{
+    background-color: #1a2235;
+    color: white;
+}
+#part1 button:hover{
+    background-color: #ddc8ac;
+    color: black;
+    border: solid 2px #d66b64;
+}
+ #part2{
+    background-color: white;
+    color: black;
+     padding-bottom: 100px;
+}
+ #part2 .content{
+     flex-direction: column;
+ }
+#causes{
+    display: flex;
+    flex-direction: column;
+}
+#part2 h2{
+    width: 100%;
+    color: #d66b64;
+    text-transform: uppercase;
+    text-align: center;
+}
+ #part2 button{
+    background-color: #d66b64;
+    color: #1a2235;
+    border: solid 2px #d66b64;
+}
+ #part2 button:hover{
+    background-color: white;
+    color: black;
+}
+ #part3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ddc8ac;
+     padding-bottom: 25px;
+}
+ #part3 img{
+    width: 80%;
+     height: auto;
+     padding-top: 50px;
+}
+ #part3 .solution{
+    width: 50%;
+}
+ #part3 .pic{
+     width: 25%;
+     margin-right: auto;
+     margin-left: auto;
+ }
+#part3 button{
+    background-color: #1a2235;
+    color: white;
+}
+#part3 button:hover{
+    background-color: #ddc8ac;
+    color: black;
+    border: solid 2px #d66b64;
+}
+footer{
+    height: auto;
+    background-color:#1a2235;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+footer .part1{
+    display: flex;
+    flex-direction: column;
+}
+footer a{
+    margin-top: 25px;
+    color: #d66b64;
+}
+footer button{
+    background-color: #d66b64;
+    color: #1a2235;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+footer button:hover{
+  color: #ddc8ac;
+    border: #ddc8ac solid 2px;
+    background-color: #1a2235;
+}
+footer img{
+    width: 150px;
+}
+footer .part1 img{
+    width: 100px;
+   padding-top: 30px;
+}
+@media screen and (max-width: 840px){
+    header .part2 h1{
+        margin-top: 200px;
+    }
+    header .part2 img{
+        padding-top: 50px;
+    }
+    #part1 .content{
+        flex-direction: column;
+    }
+    #part1 .txt{
+        width: 100%;
+    }
+    #part1 .pic{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 750px){
+    #part3 .content{
+        flex-direction: column;
+    }
+    #part3 .solution{
+        width: 100%;
+    }
+    #part3 .pic{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 650px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer a{
+        margin-bottom: 20px;
+    }
+
+}
+@media only screen and (max-width: 641px){
+    header .part1{
+        flex-direction: column;
+    }
+    header .part1 img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        padding-top: 25px;
+    }
+    nav a{
+        padding: 10px;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header .part2{
+        flex-direction: column;
+    }
+    header .part2 h1{
+        width: 100%;
+        margin-top: 150px;
+    }
+    header .part2 .pic{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 415px){
+    footer  a{
+        width: 125px;
+    }
+    footer .part1{
+        text-align: center;
+    }
+    footer .part1 img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 350px){
+   nav{
+       flex-direction: column;
+   }
+    nav a{
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    nav a:nth-child(even){
+        background-color: #ddc8ac;
+    }
+    nav a:nth-child(odd){
+        background-color: white;
+    }
+    nav a:hover{
+        background-color: #d66b64;
+    }
+    header .part2 h1{
+        margin-top: 300px;
+    }
+    #part3 .pic{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 230px){
+    #part3 .pic{
+        width: 125px;
+    }
+    footer img{
+        width: 100px;
+    }
+   h2, header .part2 h1{
+       font-size: 18px;
+   }
+   p, ul{
+       font-size: 16px;
+   }
+   button{
+       padding: 5px;
+       font-size: 14px;
+   }
+
+}
