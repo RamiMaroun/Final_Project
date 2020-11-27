@@ -174,10 +174,15 @@ footer{
 footer .part1{
     display: flex;
     flex-direction: column;
+    width: 150px;
+
 }
-footer a{
-    margin-top: 25px;
+footer .part2{
+    margin-top: 50px;
     color: #d66b64;
+}
+footer .part3{
+    width: 150px;
 }
 footer button{
     background-color: #d66b64;
@@ -194,12 +199,9 @@ footer button:hover{
     background-color: #1a2235;
 }
 footer img{
-    width: 150px;
+    width: 100%;
 }
-footer .part1 img{
-    width: 100px;
-   padding-top: 30px;
-}
+
 @media (max-width: 840px){
     #show h1{
         padding-top: 200px;
