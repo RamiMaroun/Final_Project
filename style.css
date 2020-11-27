@@ -13,10 +13,11 @@ header{
     flex-direction: row;
     justify-content: space-around;
     background-color: #c6a790;
-    max-height: 100px;
+    height: auto;
 }
 header img{
-    width: 150px;
+    width: 100px;
+    height: 100px;
 }
  nav{
     display: flex;
@@ -174,11 +175,17 @@ footer{
 footer .part1{
     display: flex;
     flex-direction: column;
-    width: 150px;
+    width: 100px;
 
 }
 footer .part2{
     margin-top: 50px;
+    color: #d66b64;
+}
+footer .part1 img{
+    padding-top: 35px;
+}
+footer .part1 a{
     color: #d66b64;
 }
 footer .part3{
@@ -235,8 +242,10 @@ footer img{
         flex-direction: column;
         align-items: center;
     }
-    footer a{
-        margin-bottom: 20px;
+    footer .part2{
+        margin-bottom: 30px;
+        margin-top: 20px;
+
     }
 }
 @media (max-width: 641px){
@@ -270,7 +279,7 @@ footer img{
     }
 }
 @media (max-width: 415px){
-    footer  a{
+    footer  .part2{
         width: 125px;
     }
     footer .part1{
@@ -279,6 +288,9 @@ footer img{
     footer .part1 img{
         margin-left: auto;
         margin-right: auto;
+    }
+    footer .part3{
+        width: 125px;
     }
 }
 @media (max-width: 350px){
@@ -319,9 +331,6 @@ footer img{
 @media (max-width: 230px){
     #part3 .pic{
         width: 120px;
-    }
-    footer img{
-        width: 100px;
     }
    h2, #show h1{
        font-size: 18px;
