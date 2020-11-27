@@ -10,20 +10,12 @@ a{
 }
 header{
     display: flex;
-    flex-direction: column;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0 0.5);
-    background-color:white;
-    color: white;
-}
-header .part1{
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: #c6a790;
-    position: fixed;
-    width: 100%;
+    max-height: 200px;
 }
-header .part1 img{
+header img{
     width: 150px;
 }
  nav{
@@ -41,30 +33,28 @@ header .part1 img{
 nav a:hover{
     background-color: #d66b64;
 }
- header .part2{
+ #show{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
- header .part2 img{
+ #show img{
      width: 100%;
      height: auto;
-     padding-top: 100px;
 }
- header .part2 .pic{
+#show .pic{
      width: 60%;
      margin-top: 100px;
  }
- header .part2 h1{
-     text-align: center;
+#show h1{
+    text-align: center;
     width: 40%;
-    margin-top: 300px;
+    padding-top: 200px;
     text-transform: uppercase;
     color: #1a2235;
     font-size: 35px;
-    line-height: 2em;
 }
- header .part2 .color{
+ #show .color{
     color: #d66b64;
 }
  main{
@@ -175,12 +165,10 @@ button{
     border: solid 2px #d66b64;
 }
 footer{
-    height: auto;
     background-color:#1a2235;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 100%;
 }
 footer .part1{
     display: flex;
@@ -211,11 +199,11 @@ footer .part1 img{
     width: 100px;
    padding-top: 30px;
 }
-@media screen and (max-width: 840px){
-    header .part2 h1{
-        margin-top: 200px;
+@media (max-width: 840px){
+    #show h1{
+        padding-top: 200px;
     }
-    header .part2 img{
+    #show img{
         padding-top: 50px;
     }
     #part1 .content{
@@ -228,7 +216,7 @@ footer .part1 img{
         width: 80%;
     }
 }
-@media screen and (max-width: 750px){
+@media (max-width: 750px){
     #part3 .content{
         flex-direction: column;
     }
@@ -239,7 +227,7 @@ footer .part1 img{
         width: 300px;
     }
 }
-@media screen and (max-width: 650px){
+@media (max-width: 650px){
     footer{
         flex-direction: column;
         align-items: center;
@@ -247,13 +235,12 @@ footer .part1 img{
     footer a{
         margin-bottom: 20px;
     }
-
 }
-@media only screen and (max-width: 641px){
-    header .part1{
+@media (max-width: 641px){
+    header {
         flex-direction: column;
     }
-    header .part1 img{
+    header img{
         margin-left: auto;
         margin-right: auto;
         width: 100px;
@@ -265,21 +252,21 @@ footer .part1 img{
         margin-left: auto;
         margin-right: auto;
     }
-    header .part2{
+    #show{
         flex-direction: column;
     }
-    header .part2 h1{
+    #show h1{
         width: 100%;
-        margin-top: 150px;
+        padding-top: 50px;
     }
-    header .part2 .pic{
+   #show .pic{
         width: 100%;
         margin-right: auto;
         margin-left: auto;
         margin-top: 50px;
     }
 }
-@media screen and (max-width: 415px){
+@media (max-width: 415px){
     footer  a{
         width: 125px;
     }
@@ -291,12 +278,15 @@ footer .part1 img{
         margin-right: auto;
     }
 }
-@media screen and (max-width: 350px){
+@media (max-width: 350px){
+    header{
+        height: auto;
+    }
    nav{
        flex-direction: column;
    }
     nav a{
-        padding: 5px;
+        padding: 4px 0 4px 0;
         text-align: center;
         width: 100%;
     }
@@ -309,29 +299,39 @@ footer .part1 img{
     nav a:hover{
         background-color: #d66b64;
     }
-    header .part2 h1{
-        margin-top: 300px;
+    #show h1{
+        padding-top: 50px;
+        font-size: 25px;
     }
-    #part3 .pic{
+    #show .pic{
         width: 200px;
     }
-}
-@media screen and (max-width: 230px){
+    #show img{
+        padding-top: 0;
+    }
     #part3 .pic{
-        width: 125px;
+        width: 80%;
+    }
+}
+@media (max-width: 230px){
+    #part3 .pic{
+        width: 120px;
     }
     footer img{
         width: 100px;
     }
-   h2, header .part2 h1{
+   h2, #show h1{
        font-size: 18px;
    }
    p, ul{
-       font-size: 16px;
+       font-size: 14px;
    }
    button{
        padding: 5px;
        font-size: 14px;
+   }
+   #show .pic{
+       width: 90%;
    }
 
 }
