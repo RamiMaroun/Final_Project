@@ -191,6 +191,9 @@ footer .part1 a{
 footer .part3{
     width: 150px;
 }
+footer .part3 img{
+    padding-top: 10px;
+}
 footer button{
     background-color: #d66b64;
     color: #1a2235;
