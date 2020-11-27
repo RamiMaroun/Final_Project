@@ -60,27 +60,24 @@ nav a:hover{
     color: #d66b64;
 }
  main{
-     padding: 0;
-     margin: 0;
-     width: 100%;
+     display: flex;
+     flex-direction: column;
+     width: 90%;
+     margin-left: auto;
+     margin-right: auto;
+     box-shadow: 0 8px 14px 0 rgba(26,34,53, 0.4);
  }
  .btn {
     text-align: center;
  }
 #part1{
-    background-color:#ddc8ac;
-    padding-bottom: 50px;
-}
-.content{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
 }
 .txt{
     width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 }
 #part1 .pic{
     width: 30%;
@@ -111,16 +108,11 @@ button{
     border: solid 2px #d66b64;
 }
  #part2{
-    background-color: white;
-    color: black;
-     padding-bottom: 100px;
-}
- #part2 .content{
+     display: flex;
      flex-direction: column;
- }
-#causes{
-    display: flex;
-    flex-direction: column;
+     background-color: white;
+     color: black;
+     padding: 50px;
 }
 #part2 h2{
     width: 100%;
@@ -137,12 +129,17 @@ button{
     background-color: white;
     color: black;
 }
+ #part1{
+     padding: 50px;
+ }
+ #part1 , #part3{
+     background-color:#ddc8ac;
+     padding: 50px;
+ }
  #part3{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #ddc8ac;
-     padding-bottom: 25px;
 }
  #part3 img{
     width: 80%;
@@ -171,6 +168,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 50px;
 }
 footer .part1{
     display: flex;
@@ -219,7 +217,7 @@ footer img{
     #show img{
         padding-top: 50px;
     }
-    #part1 .content{
+    #part1 {
         flex-direction: column;
     }
     #part1 .txt{
@@ -230,7 +228,7 @@ footer img{
     }
 }
 @media (max-width: 750px){
-    #part3 .content{
+    #part3{
         flex-direction: column;
     }
     #part3 .solution{
@@ -248,7 +246,6 @@ footer img{
     footer .part2{
         margin-bottom: 30px;
         margin-top: 20px;
-
     }
 }
 @media (max-width: 641px){
@@ -330,6 +327,16 @@ footer img{
     #part3 .pic{
         width: 80%;
     }
+    #part1, #part2 , #part3{
+        padding: 25px;
+
+    }
+    #part1 .pic{
+        width: 125px;
+    }
+    #part1 img{
+        padding-top: 10px;
+    }
 }
 @media (max-width: 230px){
     #part3 .pic{
@@ -348,5 +355,18 @@ footer img{
    #show .pic{
        width: 90%;
    }
+    #part1, #part2 , #part3{
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+@media(max-width: 175px) {
+    #part1, #part2 , #part3{
+        font-size: 12px;
+        padding: 2px;
+    }
+    #part1 .pic{
+        width: 100px;
+    }
 
 }
