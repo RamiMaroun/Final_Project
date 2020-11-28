@@ -188,7 +188,7 @@ nav a:hover{
 .show_txt h2{
     font-size: 20px;
 }
- #show .color{
+.color{
     color: #d66b64;
 }
  #show-solution{
@@ -208,8 +208,24 @@ main.issue, main.solution{
 }
 main.solution #part1{
     display: flex;
-    flex-direction: column;
-    padding:25px;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:50px;
+}
+main.solution #part1 .txt{
+    width: 60%;
+    text-align: -moz-left;
+}
+main.solution #part1 .txt p{
+    padding-top: 50px;
+}
+main.solution #part1 .pic{
+    width: 40%;
+    margin-left: 50px;
+}
+main.solution #part1 img{
+    width: 100%;
+    padding-top: 15%;
 }
  #home-part2 .boxes{
      display: flex;
@@ -235,26 +251,26 @@ main.solution #part1{
  .btn {
     text-align: center;
  }
-#part1{
+main.issue #part1{
     display: flex;
     flex-direction: row;
 }
-.txt{
+main.issue .txt{
     width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
-#part1 .pic{
+ main.issue #part1 .pic{
     width: 30%;
     margin-left: auto;
     margin-right: auto;
 }
-#part1 img{
+main.issue #part1 img{
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    padding-top: 100px;
+    padding: 100px 0 0 20px;
 }
 button{
     padding: 15px;
@@ -263,50 +279,49 @@ button{
     border-radius: 5px;
     width: auto;
 }
-#part1 button{
+main.issue #part1 button{
     background-color: #1a2235;
     color: white;
 }
-#part1 button:hover{
+main.issue #part1 button:hover{
     background-color: #ddc8ac;
     color: black;
     border: solid 2px #d66b64;
 }
- #part2{
+main.issue #part2{
      display: flex;
      flex-direction: column;
      background-color: white;
      color: black;
      padding: 50px;
 }
-#part2 h2{
+main.issue #part2 h2{
     width: 100%;
     color: #d66b64;
     text-transform: uppercase;
     text-align: center;
 }
- #part2 button{
+main.issue #part2 button{
     background-color: #d66b64;
     color: #1a2235;
     border: solid 2px #d66b64;
 }
- #part2 button:hover{
+main.issue #part2 button:hover{
     background-color: white;
     color: black;
 }
- #part1{
+main.issue #part1{
      padding: 50px;
  }
- #part1 , #part3{
+main.issue #part1 , main.issue #part3{
      background-color:#ddc8ac;
      padding: 50px;
  }
-
-#part3 button{
+main.issue #part3 button{
     background-color: #1a2235;
     color: white;
 }
-#part3 button:hover{
+main.issue #part3 button:hover{
     background-color: #ddc8ac;
     color: black;
     border: solid 2px #d66b64;
@@ -366,14 +381,17 @@ footer img{
     #show img{
         padding-top: 50px;
     }
-    #part1 {
+    main.issue #part1 {
         flex-direction: column;
     }
-    #part1 .txt{
+    main.issue #part1 .txt{
         width: 100%;
     }
-    #part1 .pic{
+    main.issue #part1 .pic{
         width: 80%;
+    }
+    main.issue #part1 img{
+        padding: 20px 0 0 0;
     }
 }
 @media(max-width: 830px) {
@@ -387,6 +405,24 @@ footer img{
         justify-content: space-between;
     }
 }
+@media(max-width: 769px) {
+    main.solution #part1{
+        flex-direction: column;
+        padding:50px;
+    }
+    main.solution #part1 .txt{
+        width: 100%;
+        text-align:left;
+    }
+    main.solution #part1 .pic{
+        width: 100%;
+        margin-left: 0;
+    }
+    main.solution #part1 img{
+        width: 100%;
+        padding-top: 10%;
+    }
+}
 @media (max-width: 750px){
     #home-part2 .boxes{
         flex-direction: column;
@@ -397,6 +433,7 @@ footer img{
         width: 80%;
         margin: 30px 0 30px 0;
     }
+
 }
 @media (max-width: 650px){
     footer{
@@ -407,6 +444,7 @@ footer img{
         margin-bottom: 30px;
         margin-top: 20px;
     }
+
 }
 @media (max-width: 641px){
     #show{
@@ -424,7 +462,7 @@ footer img{
     }
 }
 @media (max-width: 415px){
-    footer  .part2{
+    footer .part2{
         width: 125px;
     }
     footer .part1{
@@ -451,14 +489,14 @@ footer img{
     #show img{
         padding-top: 0;
     }
-    #part1, #part2 , #part3{
+    main.issue #part1, main.issue #part2 , main.issue #part3{
         padding: 25px;
 
     }
-    #part1 .pic{
+    main.issue #part1 .pic{
         width: 125px;
     }
-    #part1 img{
+    main.issue #part1 img{
         padding-top: 10px;
     }
     header img{
@@ -476,8 +514,20 @@ footer img{
     #home-part2 .box img{
         width: 50px;
     }
+    main.solution #part1{
+        padding:25px;
+    }
 }
-
+@media (max-width: 321px) {
+    .menu-wrap{
+        right: 185px;
+    }
+}
+@media (max-width: 281px) {
+    .menu-wrap{
+        right: 170px;
+    }
+}
 @media (max-width: 230px){
    h2{
        font-size: 18px;
@@ -492,7 +542,7 @@ footer img{
    #show .pic{
        width: 90%;
    }
-    #part1, #part2 , #part3{
+    main.issue #part1, main.issue #part2 , main.issue #part3{
         font-size: 14px;
         padding: 10px;
     }
@@ -515,15 +565,20 @@ footer img{
     }
 }
 @media(max-width: 175px) {
-    #part1, #part2 , #part3{
+    main.issue  #part1, main.issue #part2 , main.issue #part3{
         font-size: 12px;
         padding: 2px;
     }
-    #part1 .pic{
+    main.issue #part1 .pic{
         width: 100px;
     }
     #home-part2 .box{
         padding: 1px;
-
+    }
+    main.solution #part1{
+        padding:20px;
+    }
+    main.solution #part1 .pic{
+        width: 75px;
     }
 }
