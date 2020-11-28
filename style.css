@@ -142,6 +142,7 @@ header{
     max-height:150px;
     position: fixed;
     width: 100%;
+    top: 0;
 }
 header img{
     width: 200px;
@@ -190,6 +191,9 @@ nav a:hover{
  #show .color{
     color: #d66b64;
 }
+ #show-solution{
+    margin-bottom: 100px;
+ }
  main{
      display: flex;
      flex-direction: column;
@@ -199,8 +203,8 @@ nav a:hover{
      box-shadow: 0 8px 14px 0 rgba(26,34,53, 0.4);
  }
 main.issue, main.solution{
-    margin-top: 200px;
     width: 80%;
+   margin-top: 200px;
 }
 main.solution #part1{
     display: flex;
