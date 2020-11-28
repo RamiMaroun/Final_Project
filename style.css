@@ -139,7 +139,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     background-color: #c6a790;
-    height: auto;
+    max-height:150px;
     position: fixed;
     width: 100%;
 }
