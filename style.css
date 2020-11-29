@@ -167,6 +167,7 @@ nav a:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+     padding: 25px;
 }
  #show img{
      width: 100%;
@@ -175,6 +176,7 @@ nav a:hover{
 #show .pic{
      width: 60%;
      margin-top: 100px;
+    min-width: 125px;
  }
 .show_txt{
     display: flex;
@@ -204,8 +206,9 @@ nav a:hover{
  }
 main.issue, main.solution{
     width: 80%;
-   margin-top: 200px;
+    margin-top: 200px;
     box-shadow: 0 5px 14px 0 rgba(0,0,0,0.4);
+    min-width: 125px;
 }
 main.solution #part1{
     display: flex;
@@ -242,6 +245,7 @@ main.solution #part1 img{
      padding: 10px;
      margin-left: auto;
      margin-right: auto;
+     min-width: 100px;
  }
  #home-part2 .box img{
      width: 30%;
@@ -361,7 +365,7 @@ footer button{
     padding: 20px;
     font-size: 16px;
     border: none;
-    border-radius: 10px;
+    border-radius: 2px;
 }
 footer button:hover{
   color: #ddc8ac;
@@ -523,8 +527,14 @@ footer img{
     .menu-wrap{
         right: 170px;
     }
+    #show{
+        padding: 10px;
+    }
+    main.solution #part1{
+        padding:15px;
+    }
 }
-@media (max-width: 230px){
+@media (max-width: 242px){
    h2{
        font-size: 18px;
    }
@@ -559,6 +569,9 @@ footer img{
     #home-part2 .box img{
        width: 50px;
     }
+    main.solution #part1{
+        padding:5px;
+    }
 }
 @media(max-width: 175px) {
     main.issue  #part1, main.issue #part2 , main.issue #part3{
@@ -571,10 +584,9 @@ footer img{
     #home-part2 .box{
         padding: 1px;
     }
-    main.solution #part1{
-        padding:20px;
-    }
+
     main.solution #part1 .pic{
         width: 75px;
     }
+
 }
