@@ -147,29 +147,28 @@ header{
     top: 0;
 }
 header img{
-    width: 200px;
+    width: 150px;
     height: 125px;
 }
  nav{
     display: flex;
     flex-direction: row;
+     margin-top: 25px;
 }
  nav a{
-    padding:40px 20px 40px 20px;
+    padding:15px 20px 25px 20px;
     text-decoration: none;
     font-weight: bold;
     color: #1a2235;
-    font-size: 20px;
+     font-size: 20px;
+     height: 25px;
 }
 nav a:hover{
     background-color: #d66b64;
-    color: white;
+
 }
 .active{
-    border-left: white 2px solid;
-    border-right: white 2px solid;
-
-    color: white;
+    border: white 2px solid;
 }
  #show{
     display: flex;
@@ -217,6 +216,9 @@ main.issue, main.solution ,main.app ,main.resources{
     margin-top: 200px;
     box-shadow: 0 5px 14px 0 rgba(0,0,0,0.4);
     min-width: 125px;
+}
+main.about_us{
+    margin-top: 200px;
 }
 main.solution #part1{
     display: flex;
@@ -366,6 +368,9 @@ main.app .txt{
     padding-top: 175px;
     word-wrap: break-word;
 }
+main.app .txt h2{
+  color: #1a2235;
+}
 main.app .pic{
     width: 50%;
     margin-left: 100px;
@@ -403,7 +408,36 @@ main.resources button:hover{
 main.resources a{
     padding: 10px;
 }
-
+main.about_us {
+    text-align: center;
+}
+main.about_us .boxes{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    grid-row-gap: 50px;
+}
+main.about_us .box{
+    box-shadow: 0 8px 15px 0 rgba(0,0,0,0.4);
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+}
+main.about_us img{
+    width: 100%;
+}
+main.about_us .txt{
+    padding: 10px;
+    text-align: center;
+}
+main.about_us  h1{
+    background-color: #d66b64;
+    padding: 20px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
+}
 footer{
     background-color:#1a2235;
     display: flex;
@@ -475,6 +509,14 @@ footer img{
         padding: 20px 0 0 0;
     }
 }
+@media(max-width: 850px) {
+    main.about_us .boxes{
+        grid-template-columns: repeat(1,1fr);
+    }
+    main.about_us .box{
+        width: auto;
+    }
+}
 @media(max-width: 830px) {
     .menu-wrap{
         display: inline-block;
@@ -526,7 +568,6 @@ footer img{
     main.app .pic{
         margin-left: 0;
     }
-
 }
 @media (max-width: 650px){
     footer{
@@ -570,6 +611,9 @@ footer img{
     }
     main.resources .txt{
         font-size: 16px;
+    }
+    main.about_us {
+        font-size: 14px;
     }
 }
 @media (max-width: 350px){
@@ -624,6 +668,9 @@ footer img{
     .menu-wrap{
         right: 185px;
     }
+    main.about_us .txt{
+        font-size: 14px;
+    }
 }
 @media (max-width: 281px) {
     .menu-wrap{
@@ -674,6 +721,14 @@ footer img{
     main.solution #part1{
         padding:5px;
     }
+    main.about_us {
+        font-size: 12px;
+    }
+    main.about_us .txt{
+        padding: 5px;
+        word-wrap: break-word;
+    }
+
 }
 @media(max-width: 175px) {
     main.issue  #part1, main.issue #part2 , main.issue #part3{
@@ -688,6 +743,13 @@ footer img{
     }
     main.solution #part1 .pic{
         width: 75px;
+    }
+    main.about_us .txt{
+        font-size: 12px;
+        padding: 5px;
+    }
+    main.about_us .txt p{
+     font-size: 12px;
     }
 
 }
