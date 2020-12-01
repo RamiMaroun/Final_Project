@@ -455,12 +455,9 @@ footer .part2{
     margin-top: 50px;
     color: #d66b64;
 }
-footer .part1 img{
-    padding-top: 35px;
-}
+
 footer .part1 a{
     color: #d66b64;
-    padding-top: 30px;
 }
 footer .part1 a:hover{
     color: white;
@@ -576,6 +573,10 @@ footer img{
     footer{
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+    }
+    footer .part1{
+        margin-top: 20px;
     }
     footer .part2{
         margin-bottom: 30px;
@@ -602,13 +603,7 @@ footer img{
     }
 }
 @media (max-width: 415px){
-    footer .part1{
-        text-align: center;
-    }
-    footer .part1 img{
-        margin-left: auto;
-        margin-right: auto;
-    }
+
     footer .part3{
         width: 125px;
     }
