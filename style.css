@@ -147,7 +147,11 @@ header{
     top: 0;
 }
 header img{
+width: 100%;
+}
+header .logo{
     width: 125px;
+    margin-top: 10px;
 }
  nav{
     display: flex;
@@ -412,21 +416,24 @@ main.about_us {
 }
 main.about_us .boxes{
     display: grid;
-    grid-template-columns: repeat(2,2fr);
+    grid-template-columns: repeat(2,1fr);
     grid-row-gap: 50px;
 }
 main.about_us .box{
     box-shadow: 0 8px 15px 0 rgba(0,0,0,0.4);
-    width: 350px;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
-    font-size: 16px;
+    font-size: 14px;
+}
+main.about_us .box:hover{
+    box-shadow: 0 16px 25px 0 rgba(0,0,0,0.4);
 }
 main.about_us img{
     width: 100%;
 }
 main.about_us .txt{
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 main.about_us  h1{
@@ -435,6 +442,7 @@ main.about_us  h1{
     width: 50%;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 100px;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
 }
 footer{
@@ -712,14 +720,24 @@ footer img{
         padding: 5px;
         word-wrap: break-word;
     }
-    header img{
+    header .logo{
         width: 100px;
         margin-left: 10px;
+        margin-top: 20px;
     }
     footer .part1 img{
         width: 75px;
     }
+    header .logo{
 
+        margin-left: 0;
+
+    }
+}
+@media(max-width: 231px) {
+    .menu-wrap{
+        right: 60px;
+    }
 }
 @media(max-width: 175px) {
     main.issue  #part1, main.issue #part2 , main.issue #part3{
@@ -742,11 +760,12 @@ footer img{
     main.about_us .txt p{
      font-size: 12px;
     }
-    .menu-wrap{
-        right: 60px;
-    }
-    header img{
-        width: 75px;
+
+    header .logo{
+        width: 85px;
+        margin-top: 30px;
+        margin-left: -20px;
+
     }
     footer .part1 img{
         width: 50px;
