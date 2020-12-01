@@ -13,7 +13,7 @@ body{
 }
 .menu-wrap{
     right:100px;
-    top: 25px;
+    top: 10px;
     z-index: 1;
     position: fixed;
     display: none;
@@ -141,22 +141,21 @@ header{
     flex-direction: row;
     justify-content: space-around;
     background-color: #c6a790;
-    max-height:150px;
+    height:85px;
     position: fixed;
     width: 100%;
     top: 0;
 }
 header img{
-    width: 150px;
-    height: 125px;
+    width: 125px;
 }
  nav{
     display: flex;
     flex-direction: row;
-     margin-top: 25px;
+     margin-top: 12px;
 }
  nav a{
-    padding:15px 20px 25px 20px;
+    padding:5px 20px 12px 20px;
     text-decoration: none;
     font-weight: bold;
     color: #1a2235;
@@ -372,8 +371,8 @@ main.app .txt h2{
   color: #1a2235;
 }
 main.app .pic{
-    width: 50%;
-    margin-left: 100px;
+    width: 75%;
+    margin-left: 50px;
     min-width: 250px;
 }
 main.app .pic img{
@@ -527,6 +526,9 @@ footer img{
     header{
         justify-content: space-between;
     }
+    header img{
+        margin-left: 20px;
+    }
 }
 @media(max-width: 769px) {
     main.solution #part1{
@@ -567,6 +569,7 @@ footer img{
     }
     main.app .pic{
         margin-left: 0;
+        width: 100%;
     }
 }
 @media (max-width: 650px){
@@ -639,17 +642,9 @@ footer img{
         padding-top: 10px;
     }
     header img{
-        width: 150px;
-        margin-right: auto;
-        margin-left: auto;
+        margin-left: 20px;
     }
-    .menu-wrap{
-        right: 140px;
-        top: 85px;
-    }
-    header{
-        height: 150px;
-    }
+
     #home-part2 .box img{
         width: 50px;
     }
@@ -665,17 +660,14 @@ footer img{
     }
 }
 @media (max-width: 321px) {
-    .menu-wrap{
-        right: 185px;
-    }
     main.about_us .txt{
         font-size: 14px;
     }
 }
 @media (max-width: 281px) {
     .menu-wrap{
-        right: 170px;
     }
+
     #show{
         padding: 10px;
     }
@@ -683,7 +675,7 @@ footer img{
         padding:15px;
     }
 }
-@media (max-width: 242px){
+@media (max-width: 245px){
    h2{
        font-size: 18px;
    }
@@ -700,9 +692,6 @@ footer img{
     main.issue #part1, main.issue #part2 , main.issue #part3{
         font-size: 14px;
         padding: 10px;
-    }
-    header img{
-        width: 125px;
     }
     .menu-wrap{
         right: 100px;
@@ -728,6 +717,13 @@ footer img{
         padding: 5px;
         word-wrap: break-word;
     }
+    header img{
+        width: 100px;
+        margin-left: 10px;
+    }
+    footer .part1 img{
+        width: 75px;
+    }
 
 }
 @media(max-width: 175px) {
@@ -750,6 +746,15 @@ footer img{
     }
     main.about_us .txt p{
      font-size: 12px;
+    }
+    .menu-wrap{
+        right: 60px;
+    }
+    header img{
+        width: 75px;
+    }
+    footer .part1 img{
+        width: 50px;
     }
 
 }
