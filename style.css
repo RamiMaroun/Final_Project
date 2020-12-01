@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Lora', serif, Helvetica, "Trebuchet MS", Verdana, sans-serif;
     font-size: 18px;
     line-height: 2em;
     color: #1a2235;
@@ -10,6 +10,9 @@ body{
     --primary-color: rgba(255,255,255, 0.75);
     --overlay-color: rgba(24,39,51, 0.9);
     --meue-speed: 0.75s;
+}
+.hide{
+    display: none;
 }
 .menu-wrap{
     right:100px;
@@ -371,8 +374,9 @@ main.app .box:nth-child(even){
 }
 main.app .txt{
     width: 40%;
-    padding-top: 175px;
+    padding-top: 15px;
     word-wrap: break-word;
+    line-height: 3em;
 }
 main.app .txt h3{
     color: #1a2235;
@@ -383,9 +387,9 @@ main.app .txt h3{
     padding: 10px;
 }
 main.app .pic{
-    width: 75%;
+    width: 100%;
     margin-left: 50px;
-    min-width: 250px;
+    min-width: 150px;
 }
 main.app .pic img{
     width: 60%;
