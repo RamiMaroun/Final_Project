@@ -204,6 +204,9 @@ nav a:hover{
 .color{
     color: #d66b64;
 }
+.dark_color{
+    color: #ea1a0e;
+}
  #show-solution{
     margin-bottom: 100px;
  }
@@ -234,7 +237,7 @@ main.solution #part1 .txt{
     text-align: -moz-left;
 }
 main.solution #part1 .txt p{
-    padding-top: 50px;
+    padding-top: 10px;
 }
 main.solution #part1 .pic{
     width: 40%;
@@ -371,8 +374,13 @@ main.app .txt{
     padding-top: 175px;
     word-wrap: break-word;
 }
-main.app .txt h2{
-  color: #1a2235;
+main.app .txt h3{
+    color: #1a2235;
+    width: auto;
+    border: 2px solid #1a2235;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px;
 }
 main.app .pic{
     width: 75%;
@@ -444,6 +452,7 @@ main.about_us  h1{
     margin-left: auto;
     margin-bottom: 100px;
     box-shadow: 0 4px 10px 0 rgba(0,0,0,0.4);
+    color: white;
 }
 footer{
     background-color:#1a2235;
